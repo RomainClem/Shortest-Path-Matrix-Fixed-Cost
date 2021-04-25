@@ -120,7 +120,7 @@ public class RobotMoving {
                 System.out.printf(DOWN + " (%.1f) | ", matrixCost[x][y]);
             }
             // If it points in DIAGONAL, I'll recursively go to the opposite diagonal T[-1][y-1]
-            default -> {
+            case DIAGONAL -> {
                 printBestMovement(matrixCost, matrixMovements, x - 1, y - 1);
                 System.out.printf(DIAGONAL + " (%.1f) | ", matrixCost[x][y]);
             }
